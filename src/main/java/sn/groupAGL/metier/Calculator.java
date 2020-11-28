@@ -54,7 +54,9 @@ public class Calculator {
         }
         return min;
     }
-
+    /*
+        From  Mbeye seye 
+     */
 
     /**
      *  : retourne le plus grand élément d’une liste
