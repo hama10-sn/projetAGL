@@ -30,12 +30,12 @@ public class Calculator {
 
     public int min( int a, int b ) {
 
-        return 0;
+        return Math.min(a, b);
     }
 
     public int max( int a, int b ) {
 
-        return 0;
+        return Math.max(a, b);
     }
 
     /*

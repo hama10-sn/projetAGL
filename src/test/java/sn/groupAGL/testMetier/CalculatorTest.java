@@ -46,5 +46,15 @@ public class CalculatorTest {
     /*
      * Veuillez ajouter vos testes ci-dessous
      */
+    @Test
+    public void testMin()
+    {
+    	Assert.assertEquals(3, calculator.min(3, 4));
+    }
+    @Test 
+    public void testMax()
+    {
+    	Assert.assertEquals(4, calculator.max(3, 4));
+    }
 
 }
