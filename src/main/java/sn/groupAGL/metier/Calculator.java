@@ -3,23 +3,30 @@ package sn.groupAGL.metier;
 public class Calculator {
     public int sum( int a, int b ) {
 
-        return 0;
+        return a + b;
     }
 
     public int minus( int a, int b ) {
 
-        return 0;
+        return a - b;
     }
 
     public int divide( int a, int b ) throws Exception {
 
-        return 0;
+        if ( b != 0 )
+            return a / b;
+        else
+            throw new Exception( "Division par zero impossible" );
     }
 
     public int multiply( int a, int b ) {
 
-        return 0;
+        return a * b;
     }
+
+    /*
+     * Veuillez ajouter ici vos modifications pour les branchDiassy et Mbaye
+     */
 
     public int min( int a, int b ) {
 
