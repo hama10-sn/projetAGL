@@ -57,6 +57,10 @@ public class CalculatorTest {
         Assert.assertEquals( 4, calculator.max( 3, 4 ) );
     }
 
+    /*
+     * Tet=st de maxElement et minElement
+     */
+
     @Test
     public void testMaxElement() {
 
