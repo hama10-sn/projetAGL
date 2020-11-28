@@ -7,12 +7,25 @@ import junit.framework.Assert;
 import sn.groupAGL.metier.Calculator;
 
 public class CalculatorTest {
-
+    int tab[]={9,-12,8,-92,12,-9};
     Calculator calculator;
 
     @Before
     public void setUp() throws Exception {
+
         calculator = new Calculator();
+    }
+    @Test
+    public void testMinelement()
+    {
+
+        Assert.assertEquals(12,calculator.maxElement(tab));
+    }
+
+    @Test
+    public void testMinElement()
+    {
+        Assert.assertEquals(-92,calculator.minElement(tab));
     }
 
     @Test
@@ -56,5 +69,17 @@ public class CalculatorTest {
     {
     	Assert.assertEquals(4, calculator.max(3, 4));
     }
+    @Test
+
+    public  void TestelementMin()
+    {
+
+    }
+    public void TestElement()
+    {
+
+    }
+
+
 
 }

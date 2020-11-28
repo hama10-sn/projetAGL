@@ -41,17 +41,35 @@ public class Calculator {
     /*
      * Retourne le plus petit élément d'une liste
      */
-    public int minElement( int[] list ) {
+    public int minElement(int[] list)
+    {
+        int min=list[list.length-1];
+        for(int i=list.length-1;i>1;i--)
+        {
 
-        return 0;
+            if(min>list[i-1])
+            {
+                min=list[i-1];
+            }
+        }
+        return min;
     }
 
-    /*
-     * Retourne le plus grand élément d'une liste
-     */
-    public int maxElement( int[] list ) {
 
-        return 0;
+    /**
+     *  : retourne le plus grand élément d’une liste
+     * @param list la liste des valeurs
+     * @return
+     */
+    public int maxElement(int[] list) {
+        int max = list[list.length - 1];
+        for (int i = list.length - 1; i > 1; i--) {
+
+            if (max < list[i - 1]) {
+                max = list[i - 1];
+            }
+        }
+        return max;
     }
 
 }
