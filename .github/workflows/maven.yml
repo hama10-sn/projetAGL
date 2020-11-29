@@ -26,7 +26,7 @@ jobs:
       run: mvn -B package --file pom.xml
     - uses: mr-smithers-excellent/docker-build-push@v4
       with:
-         image: diassy/projetagl
+         image: diassy/agilprojet
          registry: docker.io
          username: ${{ secrets.DOCKER_USERNAME }}
          password: ${{ secrets.DOCKER_PASSWORD }}
